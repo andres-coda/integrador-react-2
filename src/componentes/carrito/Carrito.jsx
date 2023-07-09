@@ -1,3 +1,13 @@
+/* El carrito se encarga de mostrar los productos que se agregan a el. Y de efectuar la compra, cuando esto se hace
+muestra un mensaje en la cabecera de la pantalla que dice gracias por su compra y le imprime la cantidad de monedas
+que gasto. Esta conformado de una tabla, con sus titulo en tr td diferenciado por la clase. No pude hacerlo con 
+thead tr th porque no me captaba las columnas. y un cuerpo que se llena map el arreglo que guarda los elementos que
+se agregan al carro. Este arreglo es parte del Objeto datos, que es pasado por contexto. Tiene una variable total
+que se encarga de sumar cada producto multiplicado por la cantidad que se agrego al carrito. Y dos funciones de 
+evento click, una maneja el boton comprar, que borra el contenido de carrito, y envía un mensaje, y la otra que 
+cada vez que se le hace click a un tr de productos, te muestra los detalles de ese producto a travez del componente
+productosDetalles. Si el carrito no tiene nada, muestra un mensaje que dice que está vacío */
+
 import { useContext } from "react";
 import { contextoGeneral } from "../contexto/ContextoGeneral";
 import ProductoDetalles from "../productosDetalles/ProductoDetalles";

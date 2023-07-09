@@ -8,13 +8,14 @@ function App() {
   const { datos } = useContext(contextoGeneral);
   return (
     <>
-        {datos=== undefined ? (<h1 onClick={(e)=> {console.log(datos)}}>Cargando...</h1>) : (
+        {datos === undefined ? (<h1 onClick={(e)=> {console.log(datos)}}>Cargando...</h1>) : (
           <>
             <Titulo titulo={datos.subtitulo}/>
             <Navegador />
             <Pantalla />
           </>
         )}
+        
     </>
   )
 }

@@ -1,3 +1,16 @@
+/* ProductoDetalles se encarga de mostrar los detalles de cada producto. Al producto lo paso desde el contexto,
+muestra el titulo, la categoría, una imagen, los detalles, la valoracion y el precio, además muestra cuatro botones
+y dos <p>, uno es la cantidad a agregar en el carrito, y el otro el precio total. (multiplica la cantidad por el 
+    precio individual de cada prodcuto). Un boton se encarga de cerrar la vista de detalles, y vuelve a undefined
+    el objeto.seleccionado, y no guarda ningun dato. el de suma crea un nuevo objeto con los datos pasados por prop,
+    si es que no existe en carritos, si esta en carrito toma los datos de ese objeto y le suma uno, sino
+    le agrega la caracteristica cantidad, luego la suma en uno. El boton restar, simplemente resta en 1 la 
+    cantidad del objeto.cantidad. Si es 0, lo deja en 0. El boton aceptar compara el id del producto seleccionado
+    con el carrito, y actualiza ese objeto del array, si no existe le pasa el nuevo objeto creado anteriormente al 
+    final por el metodo push.
+     */
+
+
 import { useState, useContext } from "react";
 import TituloProducto from "../tituloProducto/TituloProducto";
 import Boton from "../botones/Boton";
