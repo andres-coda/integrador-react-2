@@ -1,0 +1,23 @@
+.pantalla{
+    position: relative;
+    max-height: 570px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    scrollbar-width: thin;
+    margin: 0 0 1rem 0;
+    scrollbar-color: #C0B195 #E1D9BF;
+}
+
+.pantalla::-webkit-scrollbar {
+    width: 8px;
+    background-color: #C0B195;
+    border-radius: 10px;
+  }
+
+  .pantalla::-webkit-scrollbar-thumb {
+    background-color: #70875D;
+    border-radius: 10px;
+  }

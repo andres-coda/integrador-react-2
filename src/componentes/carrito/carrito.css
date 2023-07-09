@@ -1,0 +1,65 @@
+table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    background-color: #C0B195;
+    margin: 1rem 0.5rem;
+    padding: 0.8rem 0.5rem;
+}
+
+.reinglon:nth-child(even) {
+    background-color: #E1D9BF;
+  }
+  
+.reinglon:nth-child(odd) {
+    background-color: #e2ddce;
+  }
+
+.tituloTabla td, .total td{
+    cursor: default;
+    font-weight: bold ;
+}
+
+
+.total td{
+    padding: 0.5rem 0;
+    box-shadow: 2px 2px 4px black;
+}
+.reinglon{
+    box-shadow: 2px 2px 4px black;
+}
+
+.reinglon:hover {
+    padding: 0 1rem;
+    cursor: pointer;
+    background-color: #70875D  ;
+    box-shadow: 6px 6px 6px #1C312A;
+}
+
+@media (max-width: 400px){
+    .reinglon, .total, .tituloTabla{
+        font-size: 0.6em;
+    }
+}
+
+@media (min-width:401px){
+    .reinglon, .total, .tituloTabla{
+        font-size: 0.6em;
+    }
+}
+
+@media (min-width:601px){
+    .reinglon, .total, .tituloTabla{
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width:801px){
+    .reinglon, .total, .tituloTabla{
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,110 @@
+.carrito{
+  position: relative;
+  padding: 0;
+  border: 1px solid black;
+  margin: auto;
+}
+
+button{
+  position:relative ;
+  background-color: #1C312A;
+  color: rgb(253, 226, 186);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  box-shadow: 2px 2px 4px black;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+}
+
+button:hover {
+  border: 2px solid #A84E3E;
+  color: rgb(220, 231, 218);
+}
+button:focus,
+button:focus-visible {
+  background-color: #1c312ab6;
+  border: 2px solid black;
+  color: black;
+  box-shadow: none;
+}
+
+.carrito p{
+  position: absolute;
+  bottom: 2px;
+  right: 3px;
+  background-color: #A84E3E ;
+  border: 1px solid #E1D9BF;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px wheat;
+  padding: 1px 5px;
+  margin: 0;
+  font-size: 0.7em;
+}
+
+@media (max-width:300px ){
+  .btn-Nav,.carritoBoton {
+    font-size: 0.6em;
+    padding: 0.5rem 4rem;
+    }
+}
+
+@media (min-width: 300px){
+  .btn-Nav,.carritoBoton {
+        font-size: 0.7em;
+        padding: 0.5rem 4rem;
+    }
+}
+
+@media (min-width: 500px){
+  .btn-Nav, .carritoBoton {
+        font-size: 0.9em;
+        padding: 0.5rem 4rem;
+    }
+}
+
+@media (min-width: 800px){
+  .btn-Nav, .carritoBoton {
+        font-size: 1em;
+        padding: 0.5rem 4rem;
+    }
+}
+@media (min-width: 2100px){
+  .btn-Nav,.carritoBoton {
+        font-size: 1em;
+        padding: 0.5rem 4rem;
+    }
+}
+
+
+.carritoBoton{
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    z-index: 9999;
+    float: inline-start;
+    background-color: #A84E3E;
+    color:#E1D9BF;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+    padding: 0.2rem;
+    margin: 0px;
+}
+
+.cerrar{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    z-index: 9999;
+    float: inline-start;
+    background-color: #A84E3E;
+    color:#E1D9BF;
+    border: 1px solid wheat;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px black;
+    padding: 0.2rem;
+    margin: 0px;
+  }
+  

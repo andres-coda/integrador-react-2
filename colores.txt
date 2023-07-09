@@ -1,0 +1,5 @@
+#1C312A   verde botones
+#70875D   verde intermedio
+#E1D9BF   fondo y letras
+#C0B195   fondo carrito y producto individual
+#A84E3E   rojo botones

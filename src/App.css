@@ -1,0 +1,11 @@
+#root {
+  max-width: 1280px;
+  min-width: 100%;
+  height: 690px;
+  margin: 0 auto;
+  padding: 0 0.2rem;
+  text-align: center;
+  background-color: #E1D9BF;
+  color: black;
+  overflow: hidden;
+}
