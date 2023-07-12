@@ -31,11 +31,11 @@ function ProductoDetalles({ dato }){
         switch (btn) {
             case "resta":
                 if (cantidadProductos>0) {
-                    setCantidadProductos(cantidadProductos-1);
+                    setCantidadProductos((prev)=>(Number(prev)-1));
                 } 
             break;
             case "suma":
-                setCantidadProductos(cantidadProductos+1);
+                setCantidadProductos((prev)=>(Number(prev)+1));
             break;
             case "aceptar":
                 let objetoModificado = {...datos, elementoSeleccionado:undefined };
@@ -53,7 +53,7 @@ function ProductoDetalles({ dato }){
             break;
             case "cerrar":
                 setCantidadProductos(0);
-                setDatos( {...datos, elementoSeleccionado:undefined } );
+                setDatos((prev)=>({...prev, elementoSeleccionado:undefined } ));
             break;
             default:
                 console.log("no existe ese boton");                

@@ -28,7 +28,7 @@ export const ProvedorContextoGeneral= ({ children }) => {
               return uniqueCategories;
             }, []);
             arrayCategorias.push("todas");
-            setDatos({...datos, "data":data, "categoria":arrayCategorias })
+            setDatos((prev)=>({...datos, "data":data, "categoria":arrayCategorias }));
           })
           .catch(error => {
             console.error('Error al obtener los datos:', error)

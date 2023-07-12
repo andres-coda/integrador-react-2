@@ -18,10 +18,11 @@ function Carrito() {
   const { datos, setDatos } = useContext(contextoGeneral);
   let total = 0;
   const btnClick =(e)=>{
-    setDatos({...datos, subtitulo: `gracias por su compra, gasto $${total.toFixed(2)} `, carrito:[], pantalla:0});
+    setDatos((prev)=>({...prev, subtitulo: `gracias por su compra, gasto $${total.toFixed(2)} `, carrito:[], pantalla:0}));
   }
   const trClick = (e) => {
-    setDatos({ ...datos, elementoSeleccionado: datos.data.find(dato => Number(dato.id) === Number(e.currentTarget.id))})
+    const btn=e.currentTarget.id;
+    setDatos((prev)=>({ ...prev, elementoSeleccionado: prev.data.find(dato => Number(dato.id) === Number(btn))}));
   }
 
   const calcularSubtotal = (cantidad, precio) => {

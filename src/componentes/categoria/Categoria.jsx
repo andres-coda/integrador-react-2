@@ -12,7 +12,7 @@ import './categoria.css'
 function Categoria(){
     const { datos, setDatos } = useContext(contextoGeneral);
     const btnClick = (e)=>{
-        setDatos({...datos, categoriaActual: e.target.id, pantalla: 0, subtitulo: `categoria: ${e.target.id}`  })
+        setDatos((prev)=>({...prev, categoriaActual: e.target.id, pantalla: 0, subtitulo: `categoria: ${e.target.id}`  }));
     }
 
     return (

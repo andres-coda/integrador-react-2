@@ -16,8 +16,8 @@ import Categoria from "../categoria/Categoria";
 function Pantalla(){
     const { datos, setDatos } = useContext(contextoGeneral);
     const btnClick = (e) => {
-        
-        setDatos({ ...datos, elementoSeleccionado: datos.data.find(dato => Number(dato.id) === Number(e.currentTarget.id))})
+        const btn=e.currentTarget.id;
+        setDatos((prev)=>({ ...prev, elementoSeleccionado: prev.data.find(dato => Number(dato.id) === Number(btn))}));
     }
     return(
         <>

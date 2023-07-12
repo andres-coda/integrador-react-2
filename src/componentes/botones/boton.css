@@ -30,6 +30,10 @@ button:focus-visible {
   box-shadow: none;
 }
 
+p{
+  color: aliceblue;
+}
+
 .carrito p{
   position: absolute;
   bottom: 2px;

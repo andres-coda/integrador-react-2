@@ -14,13 +14,13 @@ function Navegador() {
         let btn = e.target.id;
         switch (btn){
             case "inicio":
-                setDatos({...datos, pantalla :0, subtitulo : "Su tienda", categoriaActual:"todas"});
+                setDatos((prev)=>({...prev, pantalla :0, subtitulo : "Su tienda", categoriaActual:"todas"}));
             break;
             case "categorias":
-                setDatos({...datos, pantalla :1, subtitulo : "categorias"});
+                setDatos((prev)=>({...prev, pantalla :1, subtitulo : "categorias"}));
             break;
             case "carrito":
-                setDatos({...datos, pantalla :2, subtitulo : "carrito"});
+                setDatos((prev)=>({...prev, pantalla :2, subtitulo : "carrito"}));
             break;
         }
     }
